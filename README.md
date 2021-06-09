@@ -26,7 +26,7 @@ CycleGANs are by nature susceptible to “hallucinating” features that are not
 
  ![image](https://user-images.githubusercontent.com/65331476/121424591-1a815580-c937-11eb-9223-4e761d9b0c2c.png)
  
- The discriminators in a cycleGAN enforce global realism of each domain transformation, however, local irregularities are not accounted for as the discriminator only provides a prediction of “real” or “fake” on the image as a whole. FCNN discriminators like the UNetGAN can enforce local and global realism simultaneously. Moreover, we used multitask learning to help resolve the problem of feature hallucination, including additional labels for clinically meaningful anatomic assessments such as left and right atrial enlargement, right and left ventricular size, and presence of left ventricular hypertrophy.  
+ The discriminators in a cycleGAN enforce global realism of each domain transformation, however, local irregularities are not accounted for as the discriminator only provides a prediction of “real” or “fake” on the image as a whole. FCNN discriminators like the UNetGAN can enforce local and global realism simultaneously. Moreover, I used multitask learning to help resolve the problem of feature hallucination, including additional labels for clinically meaningful anatomic assessments such as left and right atrial enlargement, right and left ventricular size, and presence of left ventricular hypertrophy.  
 
 ### PatchGAN - settling for an alternative (Isola et al.)
 
