@@ -4,7 +4,7 @@
 
 Cardiac ultrasound (echocardiography) is a cornerstone of the diagnostic and treatment algorithm for many cardiac diseases and is cheaper, safer, and more comfortable for the patient than alternative cardiovascular imaging modalities. Unfortunately, while echocardiography has remarkable temporal and spatial resolution, image quality can suffer from a low signal-to-noise ratio and a variety of artifacts that are produced by natural imaging barriers. The purpose of this project is to train a deep generative model that can produce high quality, diagnostic echocardiography images from lower quality studies that suffer from these artifacts. 
 
-! [](Ultrasound_of_human_heart_apical_4-cahmber_view.gif)
+! [Echocardiogram](Ultrasound_of_human_heart_apical_4-cahmber_view.gif)
 
 
 ### Markdown
