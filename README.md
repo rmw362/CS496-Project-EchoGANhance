@@ -2,9 +2,10 @@
 
 ## Premise
 
-You can use the [editor on GitHub](https://github.com/rmw362/CS496ProjectWebsite/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
+Cardiac ultrasound (echocardiography) is a cornerstone of the diagnostic and treatment algorithm for many cardiac diseases and is cheaper, safer, and more comfortable for the patient than alternative cardiovascular imaging modalities. Unfortunately, while echocardiography has remarkable temporal and spatial resolution, image quality can suffer from a low signal-to-noise ratio and a variety of artifacts that are produced by natural imaging barriers. The purpose of this project is to train a deep generative model that can produce high quality, diagnostic echocardiography images from lower quality studies that suffer from these artifacts. 
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+![image](https://user-images.githubusercontent.com/65331476/121421124-734eef00-c933-11eb-8a79-9bd545d0d5a1.png)
+
 
 ### Markdown
 
