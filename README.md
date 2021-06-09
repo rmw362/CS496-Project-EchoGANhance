@@ -26,7 +26,7 @@ CycleGANs are by nature susceptible to “hallucinating” features that are not
 
  ![image](https://user-images.githubusercontent.com/65331476/121424591-1a815580-c937-11eb-9223-4e761d9b0c2c.png)
  
- The discriminators in a cycleGAN enforce global realism of each domain transformation, however, local irregularities are not accounted for as the discriminator only provides a prediction of “real” or “fake” on the image as a whole. ![image](https://user-images.githubusercontent.com/65331476/121424899-7350ee00-c937-11eb-9d8d-c694c09516a0.png)
+ The discriminators in a cycleGAN enforce global realism of each domain transformation, however, local irregularities are not accounted for as the discriminator only provides a prediction of “real” or “fake” on the image as a whole. FCNN discriminators like the UNetGAN can enforce local and global realism simultaneously. 
 
 ### PatchGAN - settling for an alternative
 
@@ -129,13 +129,11 @@ https://user-images.githubusercontent.com/65331476/121435543-b06fad00-c944-11eb-
 https://user-images.githubusercontent.com/65331476/121435559-b796bb00-c944-11eb-8305-2cb13b5f681f.mp4
 
 
-
 #### Original
 https://user-images.githubusercontent.com/65331476/121435586-c4b3aa00-c944-11eb-9667-76e1fa73e8cd.mp4
 
 #### Generated
 https://user-images.githubusercontent.com/65331476/121435600-ca10f480-c944-11eb-88aa-059bf6205810.mp4
-
 
 
 ## Future directions
