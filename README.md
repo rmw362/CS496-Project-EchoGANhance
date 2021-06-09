@@ -130,6 +130,7 @@ https://user-images.githubusercontent.com/65331476/121435543-b06fad00-c944-11eb-
 #### Generated
 https://user-images.githubusercontent.com/65331476/121435559-b796bb00-c944-11eb-8305-2cb13b5f681f.mp4
 
+https://media.githubusercontent.com/media/rmw362/CS496-Project_EchoGANhance/Main/generated_3.mp4
 
 #### Original
 https://user-images.githubusercontent.com/65331476/121435586-c4b3aa00-c944-11eb-9667-76e1fa73e8cd.mp4
