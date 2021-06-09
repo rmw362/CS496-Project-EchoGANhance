@@ -30,7 +30,7 @@ CycleGANs are by nature susceptible to “hallucinating” features that are not
 
 ### PatchGAN - settling for an alternative
 
-![image](https://user-images.githubusercontent.com/65331476/121423640-1acd2100-c936-11eb-8036-755aec489118.png)
+![image](https://user-images.githubusercontent.com/65331476/121438271-5fae8300-c949-11eb-8b5f-b1b5aa62c492.png)
 
 70X70 Patch-based discriminator was used as the discriminator 5 convolutional blocks, predictions on image patches rather than the whole image. Used MSE (essentially L2 distance), and loss weighted by half to slow down updates to discriminator. 
 
