@@ -34,7 +34,7 @@ CycleGANs are by nature susceptible to “hallucinating” features that are not
 
 70X70 Patch-based discriminator was used as the discriminator 5 convolutional blocks, predictions on image patches rather than the whole image. Used MSE (essentially L2 distance), and loss weighted by half to slow down updates to discriminator. 
 
-### Code to generate the patchGAN discriminator: (borrowed heavily from Jason Brownlee's [MachineLearningMastery](https://machinelearningmastery.com/cyclegan-tutorial-with-keras/) 
+### Code to generate the patchGAN discriminator: (borrowed from Jason Brownlee's excellent review in [MachineLearningMastery](https://machinelearningmastery.com/cyclegan-tutorial-with-keras/))
 
 ```
 def define_discriminator(image_shape):
