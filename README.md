@@ -13,9 +13,9 @@ Cardiac ultrasound (echocardiography) is a cornerstone of the diagnostic and tre
 The purpose of this project is to train a deep generative model for unpaired image to image translation that can produce high quality, diagnostic echocardiography images from lower quality studies that suffer from these artifacts. 
 
 #### CycleGANs
-The cycleGAN (Zhu et al.) model allows for unpaired image to image translation by training two separate generators (GA->B and GB->A) and two separate discriminators (DA and DB) (see Figure 1). Each image from each domain is first converted to the opposite domain, then converted back to the original domain using the appropriate generators. This cyclic generation ensures that the transformations preserve the general features of the source image by enforcing a cycle consistency loss between the cyclically generated image and the original input image.  Moreover, an identity mapping loss serves as a sort of regularizer of the generators, by ensuring that if the GA->B is used for an image from the B domain, the same image is produced (identity) and vice versa. 
+![CycleGANs](https://user-images.githubusercontent.com/65331476/121422726-21a76400-c935-11eb-99bd-f8f8a4d2b243.png)
 
- ![CycleGANs](https://user-images.githubusercontent.com/65331476/121422726-21a76400-c935-11eb-99bd-f8f8a4d2b243.png)
+The cycleGAN (Zhu et al.) model allows for unpaired image to image translation by training two separate generators (GA->B and GB->A) and two separate discriminators (DA and DB) (see Figure 1). Each image from each domain is first converted to the opposite domain, then converted back to the original domain using the appropriate generators. This cyclic generation ensures that the transformations preserve the general features of the source image by enforcing a cycle consistency loss between the cyclically generated image and the original input image.  Moreover, an identity mapping loss serves as a sort of regularizer of the generators, by ensuring that if the GA->B is used for an image from the B domain, the same image is produced (identity) and vice versa. 
 
 #### CycleGAN Hallucination
  ![image](https://user-images.githubusercontent.com/65331476/121422817-3683f780-c935-11eb-8c16-80320b3e8bc3.png)
@@ -25,13 +25,15 @@ CycleGANs are by nature susceptible to “hallucinating” features that are not
 ### UNetGAN and multi-task learning
 
  ![image](https://user-images.githubusercontent.com/65331476/121424591-1a815580-c937-11eb-9223-4e761d9b0c2c.png)
+ 
+ The discriminators in a cycleGAN enforce global realism of each domain transformation, however, local irregularities are not accounted for as the discriminator only provides a prediction of “real” or “fake” on the image as a whole. ![image](https://user-images.githubusercontent.com/65331476/121424899-7350ee00-c937-11eb-9d8d-c694c09516a0.png)
+
 
 ### PatchGAN - settling for an alternative
 
 ![image](https://user-images.githubusercontent.com/65331476/121423640-1acd2100-c936-11eb-8036-755aec489118.png)
 
 ![Overall Loss Function](https://user-images.githubusercontent.com/65331476/121423381-cfb30e00-c935-11eb-85a8-10ace3ab99b1.png)
-
 
 
 ## Dataset
