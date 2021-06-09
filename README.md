@@ -28,7 +28,7 @@ CycleGANs are by nature susceptible to “hallucinating” features that are not
  
  The discriminators in a cycleGAN enforce global realism of each domain transformation, however, local irregularities are not accounted for as the discriminator only provides a prediction of “real” or “fake” on the image as a whole. FCNN discriminators like the UNetGAN can enforce local and global realism simultaneously. Moreover, we used multitask learning to help resolve the problem of feature hallucination, including additional labels for clinically meaningful anatomic assessments such as left and right atrial enlargement, right and left ventricular size, and presence of left ventricular hypertrophy.  
 
-### PatchGAN - settling for an alternative
+### PatchGAN - settling for an alternative (Isola et al.)
 
 ![image](https://user-images.githubusercontent.com/65331476/121438271-5fae8300-c949-11eb-8b5f-b1b5aa62c492.png)
 
@@ -152,4 +152,4 @@ Zhu JY, Park T, Isola P, Efros AA. CycleGAN. Proc IEEE Int Conf Comput Vis. 2017
 6. 	Escobar M, Castillo A, Romero A, Arbeláez P. Ultragan: Ultrasound enhancement through adversarial generation. Lect Notes Comput Sci (including Subser Lect Notes Artif Intell Lect Notes Bioinformatics). 2020;12417 LNCS:120–130.
 7. 	Armanious K, Jiang C, Fischer M, et al. MedGAN: Medical image translation using GANs. Comput Med Imaging Graph. 2020;79.
 8. 	Goodfellow I, Pouget-Abadie J, Mirza M, et al. Generative adversarial networks. Commun ACM. 2020;63(11):139–144.
-
+9.  Isola, Philip, Zhu, Jun-Yan,  Tinghui Zhou Alexei A. Efros. Image-to-Image Translation with Conditional Adversarial Networks. arXiv 2016.
