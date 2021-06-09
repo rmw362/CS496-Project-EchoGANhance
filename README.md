@@ -6,7 +6,7 @@ Cardiac ultrasound (echocardiography) is a cornerstone of the diagnostic and tre
 
 ![Echocardiogram](Ultrasound_of_human_heart_apical_4-cahmber_view.gif)
 
-![Poor image quality](poor-imaghe-stress-11_30102012.gif)
+![Poor image quality](poor%20imaghe%20stress%2011_30102012.gif)
 
 The purpose of this project is to train a deep generative model for unpaired image to image translation that can produce high quality, diagnostic echocardiography images from lower quality studies that suffer from these artifacts. 
 
