@@ -26,11 +26,13 @@ CycleGANs are by nature susceptible to “hallucinating” features that are not
 
  ![image](https://user-images.githubusercontent.com/65331476/121424591-1a815580-c937-11eb-9223-4e761d9b0c2c.png)
  
- The discriminators in a cycleGAN enforce global realism of each domain transformation, however, local irregularities are not accounted for as the discriminator only provides a prediction of “real” or “fake” on the image as a whole. FCNN discriminators like the UNetGAN can enforce local and global realism simultaneously. 
+ The discriminators in a cycleGAN enforce global realism of each domain transformation, however, local irregularities are not accounted for as the discriminator only provides a prediction of “real” or “fake” on the image as a whole. FCNN discriminators like the UNetGAN can enforce local and global realism simultaneously. Moreover, we used multitask learning to help resolve the problem of feature hallucination, including additional labels for clinically meaningful anatomic assessments such as left and right atrial enlargement, right and left ventricular size, and presence of left ventricular hypertrophy.  
 
 ### PatchGAN - settling for an alternative
 
 ![image](https://user-images.githubusercontent.com/65331476/121423640-1acd2100-c936-11eb-8036-755aec489118.png)
+
+70X70 Patch-based discriminator was used as the discriminator 5 convolutional blocks, predictions on image patches rather than the whole image. Used MSE (essentially L2 distance), and loss weighted by half to slow down updates to discriminator. 
 
 ### Code to generate the patchGAN discriminator: (borrowed heavily from Jason Brownlee's [MachineLearningMastery](https://machinelearningmastery.com/cyclegan-tutorial-with-keras/) 
 
@@ -138,7 +140,7 @@ https://user-images.githubusercontent.com/65331476/121435600-ca10f480-c944-11eb-
 
 ## Future directions
 
-Lessons were gleaned from this experience, particularly how unstable and finnicky GANs can be. I plan to continue this research incorporating illumination consistency loss and structural similarity loss as reported in the literature to improve performance of the system. Most importantly, I will curate a better dataset of only one frame per clip and target poor vs very high quality studies in order to have a more discernable difference between high quality and low quality studies for training. 
+Lessons were gleaned from this experience, particularly how unstable and finnicky GANs can be. I plan to continue this research incorporating illumination consistency loss and structural similarity loss as reported in the literature to improve performance of the system. I will also formally evaluate the performance of the system by calculating FID and IS scores. We will also test the ability of the quality transfer GAN to improve performance of downstream AI systems (like cardiac segmentation), the most practical application for such a system. Most importantly, I will curate a better dataset of only one frame per clip and target poor vs very high quality studies in order to have a more discernable difference between high quality and low quality studies for training. 
 
 
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
