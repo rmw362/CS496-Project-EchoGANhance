@@ -144,7 +144,7 @@ https://user-images.githubusercontent.com/65331476/121435600-ca10f480-c944-11eb-
 Lessons were gleaned from this experience, particularly how unstable and finnicky GANs can be. I plan to continue this research incorporating illumination consistency loss and structural similarity loss as reported in the literature to improve performance of the system. I will also formally evaluate the performance of the system by calculating FID and IS scores. We will also test the ability of the quality transfer GAN to improve performance of downstream AI systems (like cardiac segmentation), the most practical application for such a system. Most importantly, I will curate a better dataset of only one frame per clip and target poor vs very high quality studies in order to have a more discernable difference between high quality and low quality studies for training. 
 
 ## References
-'''
+```
 1. Zhu JY, Park T, Isola P, Efros AA. CycleGAN. Proc IEEE Int Conf Comput Vis. 2017;2017-Octob:2242–2251.
 2. 	Nguyen NM, Ray N. Task-GAN:improving generative adversarial network for image restoration. Proc - 2019 16th Conf Comput Robot Vision, CRV 2019. 2019;18(2017):129–134.
 3. 	Wang R, Fang Z, Gu J, et al. High-resolution image reconstruction for portable ultrasound imaging devices. EURASIP J Adv Signal Process. EURASIP Journal on Advances in Signal Processing; 2019;2019(1).
@@ -154,4 +154,4 @@ Lessons were gleaned from this experience, particularly how unstable and finnick
 7. 	Armanious K, Jiang C, Fischer M, et al. MedGAN: Medical image translation using GANs. Comput Med Imaging Graph. 2020;79.
 8. 	Goodfellow I, Pouget-Abadie J, Mirza M, et al. Generative adversarial networks. Commun ACM. 2020;63(11):139–144.
 9.  Isola, Philip, Zhu, Jun-Yan,  Tinghui Zhou Alexei A. Efros. Image-to-Image Translation with Conditional Adversarial Networks. arXiv 2016.
-'''
+```
